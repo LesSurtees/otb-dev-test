@@ -28,19 +28,19 @@ button{
   width: 100%
 }
 
-
 .content{
   display:flex; 
-  flex-direction: row; 
-  /* flex-wrap: wrap; */
-  /* max-width:fit-content; */
+  flex-direction: column; 
   width: 100%;
   gap: 8px;
-  margin: auto;
+  margin: 0;
 }
 
 .row {
-  width: 100%
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 8px;
 }
 
 
@@ -52,14 +52,14 @@ button{
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  
+  margin-top: 0
 }
 
 .countryName{
   background-color: black;
   color: white;
-  font-size: 2.5em;
-  font-weight: 500;
+  font-size: 3em;
+  font-weight: 800;
   width: 75%;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -68,32 +68,42 @@ button{
 .countryCurrency {
   display: flex;
   flex-direction: column;
-  font-size: .5em;
+  justify-content: space-around;
+  font-size: 1em;
   width: 25%;
+  padding: 20px
 }
 .countryCurrency > span{
   font-size: 3.5em;
-  font-weight: 500;
-  
-
+  font-weight: 800;
+}
+.countryCurrency > p{
+  margin:0;
+  font-weight: 700;
+  font-size: 0.75em;
 }
 .countryCOA{
   padding: 0;
 }
 .countryCOA img {
-  /* max-width: 25%; */
+  max-width: 125px;
+  width:100%;
   height: auto;
 }
 .countryFlag {
   
-  width: 75%;
+  border-radius: 5px;
+  width: 100%;
+  /* height: auto; */
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0;
 }
-.countryFlag img{
+/* .countryFlag img{
   width: 100%;
   height: auto;
   display: block
-}
+} */
 
 .clicked{
   background-color: black;
@@ -108,8 +118,6 @@ button{
       text-align: center;
   }
 
-  .content {
-      margin-top: 1.5em;
-  }
+  
 
 }
